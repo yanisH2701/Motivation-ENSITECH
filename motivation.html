@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="output.css">
+    <title>Lettre de motivation</title> 
+</head>
+<body class="dark">
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="photo.jpg" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Yanis Hadjab</span>
+                    <span class="profession">Lettre de motivation</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="index.html">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Acceuil</span>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-link">
+                        <a href="motivation.html">
+                            <i class='bx bx-code-alt icon' ></i>
+                            <span class="text nav-text">Motivation</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="projet.html">
+                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                            <span class="text nav-text">Projets</span>
+                        </a>
+                    </li>
+
+                    
+
+
+                </ul>
+            </div>
+
+        
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <div class="text">Motivation</div>
+            <p class="text">
+                Bonjour à vous je m'appelle Yanis HADJAB en classe de terminale STI2D en spécialité AC(Architecture et Construction),<br>
+                malgré cette spécialité (que j'ai du faire a cause d'une annulation au dernier moment de l'ouverture de la spécialité SIN dans mon lycée), <br>
+                je suis plus intéressé par l'informatique que par cette dernière.<br>
+                Je voudrais rejoindre le BUT informatique de l'IUT d'Orsay car j'ai un grand intérêt envers l'informatique,<br>
+                En effet, ce domaine m'intéresse énormément tant dans la sécurité que dans le développement.<br>
+                J'aimerais ainsi approfondir mes connaissances en programmation (python, HTML, CSS) et apprendre aussi d'autre langage de programmation.<br>
+
+            </p>
+    </section>
+
+    
+    
+    
+
+    <script>
+
+        const body = document.querySelector('body'),
+              sidebar = body.querySelector('nav'),
+              toggle = body.querySelector(".toggle"),
+              searchBtn = body.querySelector(".search-box"),
+              modeSwitch = body.querySelector(".toggle-switch"),
+              modeText = body.querySelector(".mode-text");
+
+
+        toggle.addEventListener("click" , () =>{
+            sidebar.classList.toggle("close");
+        })
+
+        searchBtn.addEventListener("click" , () =>{
+            sidebar.classList.remove("close");
+        })
+
+    </script>
+
+</body>
+</html>

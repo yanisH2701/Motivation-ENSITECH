@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="output.css">
+    <title>Lettre de motivation</title> 
+</head>
+<body class="dark">
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="photo.jpg" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Yanis Hadjab</span>
+                    <span class="profession">Lettre de motivation</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="index.html">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Acceuil</span>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-link">
+                        <a href="motivation.html">
+                            <i class='bx bx-code-alt icon' ></i>
+                            <span class="text nav-text">Motivation</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="projet.html">
+                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                            <span class="text nav-text">Projets</span>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+
+        
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <div class="text">Mes projets</div>
+        <p class="text">
+            J’ai travaillé sur un projet en collaboration consistant en un programme en python permettant d’analyser les cours des différentes crypto-monnaies existantes <br>
+            sur le site de binance avec une stratégie permettant d’optimiser l’achat et la revente de la crypto-monnaie sélectionnée grâce à l’API de binance <br>
+            (plateforme de trading en ligne) une fois tous les éléments de la stratégie réunie pour une bonne condition d’achat ou de vente, <br>
+            le programme grâce a la clé API permettant de relier le compte binance a l’API ainsi qu’au programme entrera en position au bon moment, <br>
+            ce qui permet donc d’automatiser le trading. <br>
+            Dans une première version ce programme pouvait seulement détecter les bonnes occasions d’achat et de vente, <br>
+            et envoyant un signal audio a l’utilisateur afin d’alerter sur le moment auquel il devrait acheter ou vendre selon le signal. <br>
+        </p>
+    </section>
+
+
+    <script>
+
+        const body = document.querySelector('body'),
+              sidebar = body.querySelector('nav'),
+              toggle = body.querySelector(".toggle"),
+              searchBtn = body.querySelector(".search-box"),
+              modeSwitch = body.querySelector(".toggle-switch"),
+              modeText = body.querySelector(".mode-text");
+
+
+        toggle.addEventListener("click" , () =>{
+            sidebar.classList.toggle("close");
+        })
+
+        searchBtn.addEventListener("click" , () =>{
+            sidebar.classList.remove("close");
+        })
+
+    </script>
+
+</body>
+</html>
